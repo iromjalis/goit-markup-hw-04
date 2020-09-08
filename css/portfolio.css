@@ -1,0 +1,49 @@
+:root{
+    --text-color: #757575;
+    --title-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --hero-bg: #2F303A;
+    --main-bg: #E5E5E5;
+    --team-bg: #F5F4FA;
+    --header-bg: #ffffff;
+    --address-color: #rgba(255, 255, 255, 0.6);
+  }
+
+  ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+.hero-btn{
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus{
+  color: var(--title-color);
+}
+
+.img-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.img-description{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
