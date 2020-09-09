@@ -443,10 +443,19 @@ header .flex.container{
 .partner-icon{
   justify-content: center;  
 }
+
+
 .partner-logo{
   border: 1px solid #AFB1B8;
   width: 170px;
   height: 90px;
+  border-radius: 4px;
+}
+
+.partner-logo:hover,
+.partner-logo:focus{
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 .partner-list-item:not(:last-child){
@@ -463,6 +472,10 @@ header .flex.container{
   padding-bottom: 94px;
 }
 
+.partner:hover{
+  fill: var(--accent-color);
+
+}
 
 /*=== END PARTNERS ===*/
 
