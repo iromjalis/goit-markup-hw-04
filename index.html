@@ -15,7 +15,7 @@
                     <!--Логотип header-->
 
             <nav class="flex nav">
-                <a href="./index.html"><img src="./images/WebStudio.svg" alt="Логотип" class="logo"></a>
+                <a href="./index.html"><img src="./images/SVG/WebStudio.svg" alt="Логотип" class="logo"></a>
 
                 <ul class="nav-list flex">
                     <li class="nav-list-item"><a href="./index.html" class="link current">
@@ -28,10 +28,16 @@
             <!--Контакты-->
             <address class="address flex">
                 <ul class="flex">
-                    <li class="contacts envelope">                
+                    <li class="contacts envelope"> 
+                        <svg class="icon-envelope">
+                            <use href="./images/SVG/symbol-defs.svg#icon-envelope"></use>
+                        </svg>               
                         <a href="mailto:info@devstudio.com" class="contacts "> info@devstudio.com</a>
                     </li>
-                    <li class="contacts tel">                
+                    <li class="contacts tel">             
+                        <svg class="icon-tel">
+                            <use href="./images/SVG/symbol-defs.svg#icon-tel"></use>
+                        </svg>   
                         <a href="tel:+380961111111" class="contacts "> +38 096 111 11 11 </a>
                     </li>
                 </ul>
@@ -40,16 +46,12 @@
     </header>
 
     <!-- Главный контент страницы-->
-    <main class="main-hero">
-        <div class="main-hero-container">
-            <div class="container flex">
-                <!--Герой-->
-                <section class="hero flex">
-                    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="hero-btn">Заказать услугу</button>
-                </section>
-            </div>
-        </div>
+    <main >
+        <!--Герой-->
+        <section class="hero">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="hero-btn">Заказать услугу</button>
+        </section>
        
 
     <!--Чем можем похвастаться-->
@@ -115,125 +117,205 @@
                 <img src="./images/our-team/photo1.1.jpg" alt="парень в синей рубашке" width="270" height="260">
                 <h3 class="team name">Николай Кучеренко</h3>
                 <h4 class="team profession">Product Designer</h4>
-              <!--
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
+                <ul class="flex icon-list">
+                    <li class="icon ">
+                        <a href="http://www.instagram.com"><svg class="icon-instagram">
+                            <use href="./images/SVG/symbol-defs.svg#icon-instagram" width="20px"></use>
+                        </svg></a>
+        
                     </li>
-                    <li>
-                        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="твиттер"></a>
+                    <li class="icon">
+                        <a href="http://www.twitter.com">
+                        <svg class="icon-twitter" >
+                            <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+        
                     </li>
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
+                    <li class="icon">
+                        <a href="http://www.facebook.com">
+                        <svg class="icon-facebook">
+                            <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
                     </li>
-                    <li>
-                        <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
+                    <li class="icon">
+                        <a href="http://www.linkedin.com">
+                        <svg class="icon-linkedin">
+                            <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
                     </li>
-                </ul> -->
+                </ul>
             </li> 
 
-            <!--Ольга Иванова-->
+            <!--Андрей Шевченко-->
             <li class="team-list-item">
-                <img src="./images/our-team/photo1.2.jpg" alt="девушка в свитере" width="270" height="260">
-                <h3 class="team name">Ольга Иванова</h3>
+                <img src="./images/our-team/photo1.2.jpg" alt="девушка в черном пиджаке" width="270" height="260">
+                <h3 class="team name">Ольга Репина</h3>
                 <h4 class="team profession">Frontend Developer</h4>
-               <!--
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
+                <ul class="flex icon-list">
+                    <li class="icon ">
+                        <a href="http://www.instagram.com"><svg class="icon-instagram">
+                            <use href="./images/SVG/symbol-defs.svg#icon-instagram" width="20px"></use>
+                        </svg></a>
+        
                     </li>
-                    <li>
-                        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="твиттер"></a>
+                    <li class="icon">
+                        <a href="http://www.twitter.com">
+                        <svg class="icon-twitter" >
+                            <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+        
                     </li>
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
+                    <li class="icon">
+                        <a href="http://www.facebook.com">
+                        <svg class="icon-facebook">
+                            <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
                     </li>
-                    <li>
-                        <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
+                    <li class="icon">
+                        <a href="http://www.linkedin.com">
+                        <svg class="icon-linkedin">
+                            <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
                     </li>
-                </ul> -->
-            </li> 
+                </ul>
+    
+             </li>
 
             <!--Андрей Шевченко-->
             <li class="team-list-item">
                 <img src="./images/our-team/photo1.3.jpg" alt="парень в футболке серой" width="270" height="260">
                 <h3 class="team name">Андрей Шевченко</h3>
                 <h4 class="team profession">Marketing</h4>
-                <!--
-               <ul>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
+                <ul class="flex icon-list">
+                    <li class="icon ">
+                        <a href="http://www.instagram.com"><svg class="icon-instagram">
+                            <use href="./images/SVG/symbol-defs.svg#icon-instagram" width="20px"></use>
+                        </svg></a>
+        
                     </li>
-                    <li>
-                        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="твиттер"></a>
+                    <li class="icon">
+                        <a href="http://www.twitter.com">
+                        <svg class="icon-twitter" >
+                            <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+        
                     </li>
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
+                    <li class="icon">
+                        <a href="http://www.facebook.com">
+                        <svg class="icon-facebook">
+                            <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
                     </li>
-                    <li>
-                        <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
+                    <li class="icon">
+                        <a href="http://www.linkedin.com">
+                        <svg class="icon-linkedin">
+                            <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
                     </li>
-                </ul> -->
-            </li>
+                </ul>
+             </li>
 
             <!--Иван Николаев-->
             <li class="team-list-item">
                 <img src="./images/our-team/photo1.4.jpg" alt="парень в футболке белой" width="270" height="260">
                 <h3 class="team name">Иван Николаев</h3>
                 <h4 class="team profession">UI Designer</h4>
-                <!--
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
+                <ul class="flex icon-list">
+                    <li class="icon ">
+                        <a href="http://www.instagram.com"><svg class="icon-instagram">
+                            <use href="./images/SVG/symbol-defs.svg#icon-instagram" width="20px"></use>
+                        </svg></a>
+        
                     </li>
-                    <li>
-                        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="твиттер"></a>
+                    <li class="icon">
+                        <a href="http://www.twitter.com">
+                        <svg class="icon-twitter" >
+                            <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+        
                     </li>
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
+                    <li class="icon">
+                        <a href="http://www.facebook.com">
+                        <svg class="icon-facebook">
+                            <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
                     </li>
-                    <li>
-                        <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
+                    <li class="icon">
+                        <a href="http://www.linkedin.com">
+                        <svg class="icon-linkedin">
+                            <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
                     </li>
-                </ul> -->
-            </li>
+                </ul>
+
+             </li>
         </ul>
     </div>
+    </section>
     <!--Постоянные клиенты-->
     <section class="partners-list ">
-        <div class="container">
+        <div class="partners container">
         <h2 class="heading">Постоянные клиенты</h2>
-        <ul class="flex">
-            <li class="partner-list">
-                <a href="" target="_blank">
-<!--                     <img src="./images/logo-1.png" alt="Ya&CO">
- -->                </a>
+        <ul class="partner-icon flex">
+            <li class="partner-list-item">
+                <a href=""class="partner-logo">
+                <svg  class="partner">
+                    <use href="./images/SVG/symbol-defs.svg#icon-logo-1" ></use>
+                </svg>
+            </a>
             </li>
-            <li>
-                <a href="" target="_blank">
-<!--                     <img src="./images/logo-2.png" alt="Company tagline">
- -->                </a>
+            <li class="partner-list-item">
+                <a href=""class="partner-logo">
+
+                <svg class="partner">
+                    <use href="./images/SVG/symbol-defs.svg#icon-logo-2"></use>
+                </svg>
+                </a>
             </li>
-            <li>
-                <a href="" target="_blank">
-<!--                     <img src="./images/logo-3.png" alt="Company">
- -->                </a>
+            <li class="partner-list-item">
+                <a href=""class="partner-logo">
+
+                <svg class="partner">
+                    <use href="./images/SVG/symbol-defs.svg#icon-logo-3"></use>
+                </svg>
+                </a>
             </li>
-            <li>
-                <a href="">
-<!--                     <img src="./images/logo-4.png" alt="Foster Peters">
- -->                </a>
+            <li class="partner-list-item">
+                <a href=""class="partner-logo">
+                <svg  class="partner">
+                    <use href="./images/SVG/symbol-defs.svg#icon-logo-4"></use>
+                </svg>
+                </a>
             </li>
-            <li>
-                <a href="" target="_blank">
-<!--                     <img src="./images/logo-5.png" alt="Brand">
- -->                </a>
+            <li class="partner-list-item">
+                <a href=""class="partner-logo">
+
+                <svg class="partner">
+                    <use href="./images/SVG/symbol-defs.svg#icon-logo-5"></use>
+                </svg>
+                </a>
             </li>
-            <li>
-                <a href="" target="_blank">
-<!--                     <img src="./images/logo-1.png" alt="Ya&CO">
- -->                </a>
+            <li class="partner-list-item">
+                <a href=""class="partner-logo">
+
+                <svg  class="partner">
+                    <use href="./images/SVG/symbol-defs.svg#icon-logo-6"></use>
+                </svg>
+                </a>
             </li>
+            
         </ul>
     </div>
     </section> 
@@ -242,11 +324,15 @@
     </main>
    
 
-    <footer class="footer ">
-        <div class="container">
+    <footer class="footer flex">
+        <div class="container flex">
         <!--адресс-->
-            <a href="./main.html">
-                <img src="./images/Web-Studio-footer.svg" alt="лого">
+            <div>
+            <a href="./index.html">
+                <img src="./images/Web-Studio-footer.png" alt="logo" class="footer-logo">
+                <!-- <svg class="icon-Web-Studio-footer" width="145px">
+                    <use href="./images/Web-Studio-footer.png"></use>
+                </svg> -->
             </a>
             <address>
                 <ul>
@@ -255,27 +341,44 @@
                     <li class="address">+38 099 111 11 11</li>
                 </ul>            
             </address>
-        </div>
-        <!-- присоединяйтесь
-        <div>
-            <p>Присоединяйтесь</p>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
+            </div>
+        <!-- присоединяйтесь -->
+            <div class="subscribe">
+            <p class="footer-title">Присоединяйтесь</p>
+            <ul class="flex icon-list">
+                <li class="icon ">
+                    <a href="http://www.instagram.com"><svg class="icon-instagram">
+                        <use href="./images/SVG/symbol-defs.svg#icon-instagram" width="20px"></use>
+                    </svg></a>
+    
                 </li>
-                <li>
-                    <a href="https://www.twitter.com" target="_blank" ><img src="./images/twitter.png" alt="твиттер"></a>
+                <li class="icon">
+                    <a href="http://www.twitter.com">
+                    <svg class="icon-twitter" >
+                        <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+    
                 </li>
-                <li>
-                    <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
+                <li class="icon">
+                    <a href="http://www.facebook.com">
+                    <svg class="icon-facebook">
+                        <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                </a>
                 </li>
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
+                <li class="icon">
+                    <a href="http://www.linkedin.com">
+                    <svg class="icon-linkedin">
+                        <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
                 </li>
             </ul>
 
+            </div>
         </div>
-
+        <!--
         Подпишись на рассылку
         <div>
             <strong>Подпишись на рассылку</strong>
