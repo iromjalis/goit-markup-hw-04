@@ -97,7 +97,10 @@ header .flex.container{
   height: 80px;
 }
 
-.logo{
+.icon-WebStudio,
+.icon-Web-Studio-footer{
+  width: 145px;
+  height: 31px;
   margin-right: 93px;
 }
 
@@ -202,12 +205,13 @@ header .flex.container{
   min-width: 1600px;
   height: 600px;
   object-fit: fill;
-  background-image: url(../images/SVG/hero.svg);
+  background-image:  url(../images/hero.jpg);
   background-color: var(--hero-bg);
   background-repeat: no-repeat;
   text-align: center;
   padding: 200px 452px;
   background-position: 50% 50%;
+
 }
 
 .hero>img{
@@ -244,17 +248,6 @@ header .flex.container{
   color: var(--title-color);
 }
 
-.main-hero-container{
-  display: block;
-  background-image: url(../images/hero.jpg);
-  background-color: var(--hero-bg);
-  background-repeat: no-repeat;
-  object-fit: fill;
-  object-position: 100% 100%;
-  margin: 0 auto;
-  width: 1600px;
-  height: 600px;
-}
 /* === END HERO ===*/
 
 
@@ -293,7 +286,7 @@ header .flex.container{
   width: 270px;
   height: 120px;
   background-color:var(--team-bg);
-  background-image: url(../images/features/tv-table.svg);
+  background-image: url(../images/SVG/tv-table.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -304,7 +297,7 @@ header .flex.container{
   width: 270px;
   height: 120px;
   background-color:var(--team-bg);
-  background-image: url(../images/features/clock.svg);
+  background-image: url(../images/SVG/clock.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -315,7 +308,7 @@ header .flex.container{
   width: 270px;
   height: 120px;
   background-color:var(--team-bg);
-  background-image: url(../images/features/computer.svg);
+  background-image: url(../images/SVG/computer.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -326,7 +319,7 @@ header .flex.container{
   width: 270px;
   height: 120px;
   background-color:var(--team-bg);
-  background-image: url(../images/features/astronaut.svg);
+  background-image: url(../images/SVG/astronaut.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -421,7 +414,6 @@ header .flex.container{
 .social-list-item{
   display: flex;
   margin: 0 auto;
-  
 }
 
 .social-list-item-link{
@@ -433,7 +425,6 @@ header .flex.container{
   border-radius: 50%;
   background-color: var(--white-color);
   border: 1px solid transparent;
-  fill: #AFB1B8y;
   margin-right: 10px;
 }
 
@@ -442,14 +433,13 @@ header .flex.container{
   width: 20px;
   height: 20px;
 }
-.social-list_svg:hover{
+.social-list-item-link .social-list_svg:hover{
   fill: var(--white-color);
   
 }
 
-.social-list-item-link:hover,
+.social-list-item-link:hover ,
 .social-list-item-link:focus {
-  fill: var(--white-color);
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
 }
@@ -547,12 +537,17 @@ header .flex.container{
   background-position: 50% 50%;
 }
 
+/* === FOOTER === */
+.icon-Web-Studio-footer{
+  fill: var(--accent-color);
+}
+
 .footer-title{
   width: 145px;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
 
