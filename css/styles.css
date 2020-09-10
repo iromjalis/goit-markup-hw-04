@@ -515,4 +515,41 @@ grid-template: 80px;
 margin-left: 70px;
 }
 
+.container{
+  width: 206px;
+  height: 44px;
+}
+.social-list{
+  display: flex;
+}
+
+.social-list-item{
+  display: flex;
+  margin: 0 auto;
+  
+}
+
+.social-list-item-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid transparent;
+  fill: grey;
+  margin-right: 10px;
+}
+
+.social-list_svg{
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-item-link:hover{
+  fill: white;
+  border: 1px solid blue;
+  background-color: blue;
+}
 /* ===END FOOTER ===*/
