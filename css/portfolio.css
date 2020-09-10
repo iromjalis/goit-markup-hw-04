@@ -22,9 +22,107 @@ html{
   --address-color: #rgba(255, 255, 255, 0.6);
 }
 
+
+
 img{
   display: block;
 }
+/* === HEADER ===*/
+
+header{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ECECEC;
+
+}
+
+header .flex.container{
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 80px;
+}
+
+.logo{
+  margin-right: 93px;
+}
+
+.nav-list-item:not(:last-child),
+.address .contacts:not(:last-child){
+  display: flex;
+  padding-right: 50px;
+}
+
+.link,
+.nav:visited{
+  color: var(--title-color);
+}
+
+.link:hover,
+.link:focus,
+.current,
+.contacts:hover,
+.contacts:focus{
+  color: var(--accent-color)
+}
+
+.current.link{
+  margin-top: 32px;
+}
+
+.link.current::after{
+  display:block;
+  margin: 0 auto;
+  content: "";
+  margin-top: 28px;
+  width: 100%;
+  height: 4px;
+  background-color:var(--accent-color);
+}
+
+.contacts{
+  color:var(--text-color);
+}
+
+.header .address{
+  display: inline-flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header .address .contacts{
+  display: inline-flex;
+  align-items: center;
+}
+.icon-envelope{
+  display: block;
+  width: 16px;
+  height: 12px;
+  background-color: var(--header-bg);
+  margin-right: 10px;
+}
+
+.icon-tel{
+  display: block;
+  width: 10px;
+  height: 16px;
+  background-color: var(--header-bg);
+  margin-right: 10px;
+  align-items: center;
+}
+
+.icon-envelope:hover,
+.icon-envelope:focus,
+.icon-tel:hover,
+.icon-tel:focus{
+  fill: #2196F3;
+  cursor: pointer;
+
+}
+/* === END HEADER ===*/
+
 .main.container{
   display: flex;
   align-items:center;
@@ -45,6 +143,9 @@ ul{
 
 a{
   text-decoration: none;
+}
+.current.link{
+  margin-top: 32px;
 }
 
 .container .btn-list{
