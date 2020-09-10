@@ -448,7 +448,7 @@ header .flex.container{
 }
 
 .social-list-item-link:hover,
-.social-list-item-link:focus{
+.social-list-item-link:focus {
   fill: var(--white-color);
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
