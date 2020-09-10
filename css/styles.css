@@ -20,6 +20,7 @@ address{
 
 img{
   display: block;
+  border: 1px solid transparent;
 }
 
 ul, 
@@ -87,7 +88,6 @@ header{
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  border-bottom: 1px solid #ECECEC;
 
 }
 
@@ -133,6 +133,7 @@ header .flex.container{
   width: 100%;
   height: 4px;
   background-color:var(--accent-color);
+  border-radius: 4px;
 }
 
 .contacts{

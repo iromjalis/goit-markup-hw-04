@@ -27,6 +27,17 @@ html{
 img{
   display: block;
 }
+.container{
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
 /* === HEADER ===*/
 
 header{
@@ -35,7 +46,6 @@ header{
   line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ECECEC;
-
 }
 
 header .flex.container{
@@ -123,31 +133,9 @@ header .flex.container{
 }
 /* === END HEADER ===*/
 
-.main.container{
-  display: flex;
-  align-items:center;
-}
 
-.container{
-  flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-ul{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
-.current.link{
-  margin-top: 32px;
-}
-
+/* === BUTTON === */
 .container .btn-list{
   margin-left: auto;
   margin-right: auto;
