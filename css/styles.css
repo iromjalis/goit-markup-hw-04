@@ -383,6 +383,11 @@ header .flex.container{
   margin-bottom: 30px;
 }
 
+.team-list-item .container-social-team{
+  display: flex;
+  justify-content: center;
+
+}
 .name{
   font-weight: 500;
   color: var(--title-color);
@@ -401,7 +406,53 @@ header .flex.container{
   padding-bottom: 94px;
 }
 
+.container-social-team{
+  margin: 0 auto;
+}
+.container-social{
+  width: 206px;
+  height: 44px;
+  justify-content: center;
+}
+.social-list{
+  display: flex;
+}
 
+.social-list-item{
+  display: flex;
+  margin: 0 auto;
+  
+}
+
+.social-list-item-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid transparent;
+  fill: #AFB1B8y;
+  margin-right: 10px;
+}
+
+.social-list_svg{
+  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+}
+.social-list_svg:hover{
+  fill: var(--white-color);
+  
+}
+
+.social-list-item-link:hover,
+.social-list-item-link:focus{
+  fill: var(--white-color);
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+}
 
 
 
@@ -471,7 +522,7 @@ header .flex.container{
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--address-color);
-  background-color: var(--hero-bg);
+  background-color: #2F303A;
 }
 .footer .container{
   padding-top: 60px;
@@ -515,9 +566,13 @@ grid-template: 80px;
 margin-left: 70px;
 }
 
-.container{
+.container-social-team{
+  margin: 0 auto;
+}
+.container-social{
   width: 206px;
   height: 44px;
+  justify-content: center;
 }
 .social-list{
   display: flex;
@@ -529,27 +584,29 @@ margin-left: 70px;
   
 }
 
-.social-list-item-link{
+.social-list-item-link-footer{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--white-color);
   border: 1px solid transparent;
-  fill: grey;
+  fill: var(--white-color);
+  background: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
 }
 
-.social-list_svg{
+.social-list_svg-footer{
+  fill: var(--white-color);
   width: 20px;
   height: 20px;
 }
 
-.social-list-item-link:hover{
-  fill: white;
-  border: 1px solid blue;
-  background-color: blue;
+.social-list-item-link-footer:hover{
+  fill: var(--white-color);
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
 }
 /* ===END FOOTER ===*/
