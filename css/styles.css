@@ -120,7 +120,9 @@ header .flex.container{
 .current,
 .contacts:hover,
 .contacts:focus{
-  color: var(--accent-color)
+  fill: var(--accent-color);
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 .current.link{
@@ -169,12 +171,12 @@ header .flex.container{
   align-items: center;
 }
 
-.icon-envelope:hover,
+/* .icon-envelope:hover,
 .icon-envelope:focus,
 .icon-tel:hover,
 .icon-tel:focus{
   fill: #2196F3;
-  cursor: pointer;
+  cursor: pointer; */
 
 }
 /* === END HEADER ===*/
