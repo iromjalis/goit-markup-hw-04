@@ -1,6 +1,6 @@
 *,
 *::before,
-**::after, {
+**::after{
   padding: 0;
   margin: 0;
 }
@@ -20,7 +20,7 @@ address{
 
 img{
   display: block;
-  border: 1px solid transparent;
+  border: none;
 }
 
 ul, 
