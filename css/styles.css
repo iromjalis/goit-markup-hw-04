@@ -33,11 +33,11 @@ a {
   padding-right: 15px;
 }
 
-.no-padding {
+/* .no-padding {
   padding-top: 0;
   padding-bottom: 0;
 }
-
+ */
 .list,
 .item {
   margin: 0px;
@@ -68,6 +68,16 @@ body {
 }
 
 /* !=== HEADER ===*/
+header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .logo-link,
 .logo-link--footer {
   font-family: 'Raleway', sans-serif;
@@ -93,6 +103,7 @@ body {
 .header.container {
   display: flex;
   align-items: center;
+  vertical-align: middle;
 }
 
 .nav-list {
@@ -103,40 +114,48 @@ body {
 .contacts-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-list .item + .item,
 .contacts-list .item + .item {
   margin-left: 50px;
+  align-items: center;
 }
 
 .link,
 .nav:visited {
   display: block;
   color: var(--title-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .link:hover,
 .link:focus,
 .contacts:hover,
-.contacts:focus {
+.contacts:focus,
+.link:hover .contacts-icon,
+.link:focus .contacts-icon {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contacts {
   color: var(--text-color);
 }
 
-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid #ececec;
+.contacts-icon {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  background-color: var(--header-bg);
+  margin-right: 10px;
+  align-items: center;
 }
-
 /* !=== HERO ===*/
 .hero-title {
   width: 696px;
@@ -175,15 +194,15 @@ header {
   padding: 10px 32px;
 }
 
-/* .item{
-  margin-right:30px;
-} */
-
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--title-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.contacts-icon {
+  fill: var(--text-color);
 }
 
 /*!=== ОСОБЕННОСТИ ===*/
