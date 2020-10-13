@@ -144,6 +144,22 @@ body {
   fill: var(--text-color);
 }
 
+.link:hover,
+.link:focus,
+.current:hover,
+.current:focus,
+.contacts:hover,
+.contacts:focus,
+.contacts:hover .icon,
+.contacts:focus .icon {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: red;
+}
 /* !=== HERO ===*/
 .hero-section {
   width: 1600px;
