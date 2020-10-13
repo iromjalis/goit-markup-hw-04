@@ -279,6 +279,7 @@ body {
   text-transform: uppercase;
   color: var(--title-color);
   margin-top: 30px;
+  text-align: left;
 }
 
 .title-text {
@@ -289,6 +290,7 @@ body {
   line-height: 1.71;
   color: var(--text-color);
   letter-spacing: 0.03em;
+  text-align: left;
 }
 
 /* !=== WORK ===*/
