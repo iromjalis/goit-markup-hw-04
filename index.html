@@ -10,338 +10,196 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-
 </head>
 
 <body>
-    <header class="header flex">
-        <div class="flex container">
-            <!--Логотип header-->
-            <nav class="flex nav">
-                <a href="./index.html"><span class="logo-link current">Web</span><span
-                        class="logo-link">Studio</span></a>
-                <ul class="nav-list flex">
-                    <li class="nav-list-item"><a href="./index.html" class="link current">
+    <header>
+        <!--Логотип header-->
+        <div class="header container">
+            <a href="./index.html"><span class="logo-link current">Web</span><span class="logo-link">Studio</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="item"><a href="./index.html" class="link current">
                             Студия</a></li>
-                    <li class="nav-list-item"><a href="./portfolio.html" class="link ">Портфолио</a></li>
-                    <li class="nav-list-item"><a href="" class="link">Контакты</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="#contacts" class="link">Контакты</a></li>
                 </ul>
             </nav>
 
             <!--Контакты-->
-            <address class="address flex">
-                <ul class="flex">
-                    <li class="contacts envelope">
-                        <a href="mailto:info@devstudio.com" class="contacts ">
-                            <svg class="icon-envelope">
-                                <use href="./images/SVG/symbol-defs.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com</a>
-                    </li>
-                    <li class="contacts tel">
-                        <a href="tel:+380961111111" class="contacts ">
-                            <svg class="icon-tel">
-                                <use href="./images/SVG/symbol-defs.svg#icon-tel"></use>
-                            </svg>
-                            +38 096 111 11 11 </a>
-                    </li>
-                </ul>
-            </address>
+            <ul class="contacts-list">
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="contacts link">
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380961111111" class="contacts link">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
+
     </header>
 
-    <!-- Главный контент страницы-->
     <main>
         <!--Герой-->
-        <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
+        <section class="hero-section">
+            <div class="hero container">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="hero-btn">Заказать услугу</button>
+            </div>
         </section>
-
 
         <!--Чем можем похвастаться-->
-        <section class="features container flex">
-            <h2 class="visually-hidden">Особенности</h2>
-            <ul class="features-list flex">
-                <li class="features-list-item ">
-                    <!--                 <img src="./images/Vector1.png" alt="тарелка">
- -->
-                    <p class="title"> Внимание к деталям </p>
-                    <p class="title-text">Идейные соображения, а также начало повседневной работы по формированию
-                        позиции.</p>
-                </li>
-                <li class="features-list-item">
-                    <!--                 <img src="./images/Vector2.png" alt="часы">
- -->
-                    <p class="title">Пунктуальность</p>
-                    <p class="title-text">Задача организации, в особенности же рамки и место обучения кадров влечет за
-                        собой.</p>
-                </li>
-                <li class="features-list-item">
-                    <!--                 <img src="./images/Vector3.png" alt="комп">
- -->
-                    <p class="title">Планирование</p>
-                    <p class="title-text">Равным образом консультации с широким активом в значительной степени
-                        обуславливает.</p>
-                </li>
-                <li class="features-list-item">
-                    <!--                 <img src="./images/Vector4.png" alt="космонавт">
- -->
-                    <p class="title">Современные технологии</p>
-                    <p class="title-text">Значимость этих проблем настолько очевидна, что реализация плановых зажаний.
-                    </p>
-                </li>
-            </ul>
-        </section>
-
-        <!--Чем мы занимаемся-->
-        <section class="works container">
-            <h2 class=" works heading">Чем мы занимаемся</h2>
-            <ul class=" works-list flex">
-                <li class="works-list-item">
-                    <a href="" class="works-img">
-                        <img src="./images/works/photo1.jpg" alt="лаптоп" width="370" height="294">
-                        <!--                     <span>Десктопные приложения</span>
- --> </a>
-                </li>
-                <li class="works-list-item">
-                    <a href="" class="works-img">
-                        <img src="./images/works/photo2.jpg" alt="тел" width="370" height="294">
-                        <!--                     <span>Мобильные приложения</span>
- --> </a>
-                </li>
-                <li class="works-list-item">
-                    <a href="" class="works-img">
-                        <img src="./images/works/photo3.jpg" alt="экран" width="370" height="294">
-                        <!--                     <span>Дизайнерские решения</span>
- --> </a>
-                </li>
-            </ul>
-        </section>
-
-        <!--Наша команда-->
-        <section class="team ">
-
-            <div class="team container">
-                <h2 class="heading">Наша команда</h2>
-                <ul class=" team flex">
-                    <!--Николай Кучеренко-->
-                    <li class="team-list-item">
-                        <img src="./images/our-team/photo1.1.jpg" alt="парень в синей рубашке" width="270" height="260">
-                        <h3 class="team name">Николай Кучеренко</h3>
-                        <h4 class="team profession">Product Designer</h4>
-                        <div class="container-social-team">
-                            <ul class="social-list">
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+        <section class="features-section">
+            <h2 hidden>Особенности</h2>
+            <div class="features container">
+                <ul class="features-list">
+                    <li class="features-item">
+                        <p class="title"> Внимание к деталям </p>
+                        <p class="title-text">Идейные соображения, а также начало повседневной работы по формированию
+                            позиции.</p>
                     </li>
+                    <li class="features-item">
 
-                    <!--Андрей Шевченко-->
-                    <li class="team-list-item">
-                        <img src="./images/our-team/photo1.2.jpg" alt="девушка в черном пиджаке" width="270"
-                            height="260">
-                        <h3 class="team name">Ольга Репина</h3>
-                        <h4 class="team profession">Frontend Developer</h4>
-                        <div class="container-social-team">
-                            <ul class="social-list">
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
+                        <p class="title">Пунктуальность</p>
+                        <p class="title-text">Задача организации, в особенности же рамки и место обучения кадров влечет
+                            за собой.</p>
                     </li>
+                    <li class="features-item">
 
-                    <!--Андрей Шевченко-->
-                    <li class="team-list-item">
-                        <img src="./images/our-team/photo1.3.jpg" alt="парень в футболке серой" width="270"
-                            height="260">
-                        <h3 class="team name">Андрей Шевченко</h3>
-                        <h4 class="team profession">Marketing</h4>
-                        <div class="container-social-team">
-                            <ul class="social-list">
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <p class="title">Планирование</p>
+                        <p class="title-text">Равным образом консультации с широким активом в значительной степени
+                            обуславливает.</p>
                     </li>
+                    <li class="features-item">
 
-                    <!--Иван Николаев-->
-                    <li class="team-list-item">
-                        <img src="./images/our-team/photo1.4.jpg" alt="парень в футболке белой" width="270"
-                            height="260">
-                        <h3 class="team name">Иван Николаев</h3>
-                        <h4 class="team profession">UI Designer</h4>
-                        <div class="container-social-team">
-                            <ul class="social-list">
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-list-item">
-                                    <a href="#" class="social-list-item-link">
-                                        <svg class="social-list_svg">
-                                            <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
+                        <p class="title">Современные технологии</p>
+                        <p class="title-text">Значимость этих проблем настолько очевидна, что реализация плановых
+                            зажаний.</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <!--Постоянные клиенты-->
-        <section class="partners-list ">
-            <div class="partners container">
-                <h2 class="heading">Постоянные клиенты</h2>
-                <ul class="partner-icon flex">
-                    <li class="partner-list-item">
-                        <a href="" class="partner-logo">
-                            <svg class="partner">
-                                <use href="./images/SVG/symbol-defs.svg#icon-logo-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="partner-list-item">
-                        <a href="" class="partner-logo">
 
-                            <svg class="partner">
-                                <use href="./images/SVG/symbol-defs.svg#icon-logo-2"></use>
-                            </svg>
+        <!--Чем мы занимаемся-->
+        <section class="work-section">
+            <div class="work container">
+                <h2 class="heading">Чем мы занимаемся</h2>
+                <ul class="work-list">
+                    <li class="work-list-item">
+                        <a href="">
+                            <img src="./images/photo1.jpg" alt="лаптоп" width="370" height="294">
                         </a>
                     </li>
-                    <li class="partner-list-item">
-                        <a href="" class="partner-logo">
+                    <li class="work-list-item">
+                        <a href="">
+                            <img src="./images/photo2.jpg" alt="тел" width="370" height="294">
+                        </a>
+                    </li>
+                    <li class="work-list-item">
+                        <a href="">
+                            <img src="./images/photo3.jpg" alt="экран" width="370" height="294">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-                            <svg class="partner">
-                                <use href="./images/SVG/symbol-defs.svg#icon-logo-3"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="partner-list-item">
-                        <a href="" class="partner-logo">
-                            <svg class="partner">
-                                <use href="./images/SVG/symbol-defs.svg#icon-logo-4"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="partner-list-item">
-                        <a href="" class="partner-logo">
+        <!--Наша команда-->
+        <section class="team-section">
+            <div class="team container">
+                <h2 class="heading">Наша команда</h2>
+                <ul class="team-container">
+                    <!--Николай Кучеренко-->
+                    <li class="team-item">
 
-                            <svg class="partner">
-                                <use href="./images/SVG/symbol-defs.svg#icon-logo-5"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="partner-list-item">
-                        <a href="" class="partner-logo">
+                        <img src="./images/our-team/photo1.1.jpg" alt="парень в синей рубашке" width="270" height="260">
 
-                            <svg class="partner">
-                                <use href="./images/SVG/symbol-defs.svg#icon-logo-6"></use>
-                            </svg>
-                        </a>
+                        <h3 class="team name">Николай Кучеренко</h3>
+                        <h4 class="team profession">Product Designer</h4>
+                        <!-- <ul>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="твиттер"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
+                    </li>
+                </ul> -->
+                    </li>
+
+                    <!--Ольга Иванова-->
+                    <li class="team-item">
+                        <img src="./images/our-team/photo1.2.jpg" alt="девушка в свитере" width="270" height="260">
+                        <h3 class="team name">Ольга Иванова</h3>
+                        <h4 class="team profession">Frontend Developer</h4>
+                        <!--  <ul>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="твиттер"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
+                    </li>
+                </ul> -->
+                    </li>
+
+
+                    <!--Андрей Шевченко-->
+                    <li class="team-item">
+                        <img src="./images/our-team/photo1.3.jpg" alt="парень в футболке серой" width="270"
+                            height="260">
+                        <h3 class="team name">Андрей Шевченко</h3>
+                        <h4 class="team profession">Marketing</h4>
+                        <!-- <ul>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="твиттер"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
+                    </li>
+                </ul> -->
+                    </li>
+
+                    <!--Иван Николаев-->
+                    <li class="team-item">
+                        <img src="./images/our-team/photo1.4.jpg" alt="парень в футболке белой" width="270"
+                            height="260">
+                        <h3 class="team name">Иван Николаев</h3>
+                        <h4 class="team profession">UI Designer</h4>
+                        <!--  <ul>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="твиттер"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
+                    </li>
+                </ul> -->
                     </li>
 
                 </ul>
@@ -351,71 +209,22 @@
     </main>
 
 
-    <footer class="footer flex">
-        <div class="container flex">
+    <footer class="footer__section" id="contacts">
+        <div class="footer container">
             <!--адресс-->
-            <div>
-                <a href="./main.html">
-                    <a href="./index.html"><span class="logo-link current">Web</span><span
-                            class="logo-link-footer">Studio</span></a>
-                </a>
-                <address class="footer-address">
-                    <ul>
-                        <li class="address map">г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="address">info@example.com</li>
-                        <li class="address">+38 099 111 11 11</li>
-                    </ul>
-                </address>
-            </div>
-            <!-- присоединяйтесь -->
-            <div class="subscribe">
-                <p class="footer-title">Присоединяйтесь</p>
-                <div class="container-social">
-                    <ul class="social-list">
-                        <li class="social-list-item">
-                            <a href="#" class="social-list-item-link-footer">
-                                <svg class="social-list_svg-footer">
-                                    <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
+            <a href="#top"> <span class="logo-link current">Web</span><span class="logo-link--footer">Studio</span></a>
+            </a>
+            <address class="address-container">
+                <ul>
+                    <li class="address map">
+                        <a href="https://goo.gl/maps/Ju139H4fdCofPUA69" target="_blank" rel="noopener noreferer"> г.
+                            Киев, пр-т Леси Украинки, 26 </a></li>
+                    <li class="address">info@example.com</li>
+                    <li class="address">+38 099 111 11 11</li>
+                </ul>
+            </address>
 
-                        <li class="social-list-item">
-                            <a href="#" class="social-list-item-link-footer">
-                                <svg class="social-list_svg-footer">
-                                    <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a href="#" class="social-list-item-link-footer">
-                                <svg class="social-list_svg-footer">
-                                    <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a href="#" class="social-list-item-link-footer">
-                                <svg class="social-list_svg-footer">
-                                    <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
         </div>
-        <!--
-        Подпишись на рассылку
-        <div>
-            <strong>Подпишись на рассылку</strong>
-            <form action="">
-                <input type="email" name="Email" value="email" >
-                <input type="submit" value="Подписаться"> 
-                <img src="./images/samoletik.png" alt="самолетик">
-            </form>
-        </div> -->
     </footer>
 </body>
 
