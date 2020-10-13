@@ -563,7 +563,7 @@ header .flex.container{
   color: var(--address-color);
   background-color: var(--hero-bg);
 }
-address{
+.footer-address{
   background-color: var(--hero-bg);
   font-style: normal;
 }
