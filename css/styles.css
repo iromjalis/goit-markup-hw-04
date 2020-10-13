@@ -469,6 +469,7 @@ body {
 }
 
 .address-map {
+  font-style: normal;
   color: var(--white-color);
   margin-bottom: 9px;
 }
