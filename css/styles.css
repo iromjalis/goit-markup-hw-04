@@ -93,7 +93,7 @@ body {
 }
 .header-section .logo {
   display: inline-block;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -178,8 +178,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: url(../images/hero/overlay.svg),
-    url(../images/hero/hero.jpg);
+  background-image: url(../images/hero/overlay.svg), url(../images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -239,7 +238,7 @@ body {
 
 .features-item:nth-child(1)::before {
   display: block;
-  content: '';
+  content: "";
   width: 270px;
   height: 120px;
   background-color: var(--team-bg);
@@ -250,7 +249,7 @@ body {
 
 .features-item:nth-child(2)::before {
   display: block;
-  content: '';
+  content: "";
   width: 270px;
   height: 120px;
   background-color: var(--team-bg);
@@ -261,7 +260,7 @@ body {
 
 .features-item:nth-child(3)::before {
   display: block;
-  content: '';
+  content: "";
   width: 270px;
   height: 120px;
   background-color: var(--team-bg);
@@ -272,7 +271,7 @@ body {
 
 .features-item:nth-child(4)::before {
   display: block;
-  content: '';
+  content: "";
   width: 270px;
   height: 120px;
   background-color: var(--team-bg);
@@ -285,7 +284,7 @@ body {
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428;
@@ -350,12 +349,11 @@ body {
 }
 
 .team-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
   width: 270px;
-  height: 428px;
+  min-height: 428px;
 }
 
 .team-item:not(:last-child) {
@@ -387,10 +385,11 @@ body {
 .social-list {
   display: flex;
   justify-items: center;
-  align-items: center;
+  text-align: center;
   width: 206px;
   height: 44px;
   margin: 0 auto;
+  margin-bottom: 19px;
 }
 
 .social-list-item-link {
@@ -404,7 +403,6 @@ body {
   border: 1px solid transparent;
   fill: #afb1b8;
   margin-right: 10px;
-  margin-bottom: 30px;
 }
 
 .social-list-item-link:hover,
