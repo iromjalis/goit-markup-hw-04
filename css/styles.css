@@ -454,9 +454,7 @@ body {
 }
 .partner {
   display: block;
-  width: 40px;
-  height: 40px;
-  margin: 22px 66px;
+  margin: 22px auto;
 }
 .partners-section {
   padding-top: 94px;
