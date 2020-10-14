@@ -15,34 +15,39 @@
 </head>
 
 <body>
-    <header>
-        <!--Логотип header-->
-        <div class="header container">
-            <a href="./index.html"><span class="logo-link current">Web</span><span class="logo-link">Studio</span></a>
+    <header class="header-section">
+        <div class="container">
             <nav class="nav">
+                <a href="/" class="logo"><span class="accent">Web</span><span>Span</span></a>
+
                 <ul class="nav-list">
-                    <li class="item"><a href="./index.html" class="link current">
+                    <li class="nav-item"><a href="./index.html" class="link current">
                             Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="item"><a href="#contacts" class="link">Контакты</a></li>
+                    <li class="nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="nav-item"><a href="#contacts" class="link">Контакты</a></li>
                 </ul>
             </nav>
 
-            <!--Контакты-->
             <ul class="contacts-list">
-                <li class="item">
+                <li class="contacts-item">
                     <a href="mailto:info@devstudio.com" class="contacts link">
+                        <svg class="icon" width="16" height="12">
+                            <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="item">
+                <li class="contacts-item">
                     <a href="tel:+380961111111" class="contacts link">
+                        <svg class="icon" width="10" height="16">
+                            <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
+                        </svg>
                         +38 096 111 11 11
                     </a>
                 </li>
             </ul>
-        </div>
 
+        </div>
     </header>
 
     <main>
@@ -61,42 +66,42 @@
                 <h2 class="portfolio-title"> Примеры работ</h2>
                 <ul class="examples-container">
                     <li class="flex-element">
-                        <img src="./images/portfolio1.jpg" alt="экран с лаптопа">
+                        <img src="./images/portfolio/portfolio1.jpg" alt="экран с лаптопа">
                         <div>
                             <p class="img-title">Технокряк</p>
                             <p class="img-description">Веб-сайт</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images/portfolio2.jpg" alt="баскетболисты">
+                        <img src="./images/portfolio/portfolio2.jpg" alt="баскетболисты">
                         <div>
                             <p class="img-title">Постер New Orlean vs Golden Star</p>
                             <p class="img-description">Дизайн</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images/portfolio3.jpg" alt="ресторан">
+                        <img src="./images/portfolio/portfolio3.jpg" alt="ресторан">
                         <div>
                             <p class="img-title">Ресторан Seafood</p>
                             <p class="img-description">Приложение</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images/portfolio4.jpg" alt="наушники">
+                        <img src="./images/portfolio/portfolio4.jpg" alt="наушники">
                         <div>
                             <p class="img-title">Проект Prim</p>
                             <p class="img-description">Маркетинг</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images/portfolio5.jpg" alt="коробки">
+                        <img src="./images/portfolio/portfolio5.jpg" alt="коробки">
                         <div>
                             <p class="img-title">Проект Boxes</p>
                             <p class="img-description">Приложение</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images/portfolio6.jpg" alt="экран компьютера">
+                        <img src="./images/portfolio/portfolio6.jpg" alt="экран компьютера">
                         <div>
                             <p class="img-title"> Inspiration has no Borders</p>
                             <p class="img-description">Веб-сайт</p>
@@ -104,21 +109,21 @@
 
                     </li>
                     <li class="flex-element">
-                        <img src="./images/portfolio7.jpg" alt="журнал">
+                        <img src="./images/portfolio/portfolio7.jpg" alt="журнал">
                         <div>
                             <p class="img-title">Издание Limited Edition</p>
                             <p class="img-description">Дизайн</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images/portfolio8.jpg" alt="этикетка">
+                        <img src="./images/portfolio/portfolio8.jpg" alt="этикетка">
                         <div>
                             <p class="img-title">Проект LAB</p>
                             <p class="img-description">Маркетинг</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images/portfolio9.jpg" alt="ноутбук">
+                        <img src="./images/portfolio/portfolio9.jpg" alt="ноутбук">
                         <div>
                             <p class="img-title">Growing Business</p>
                             <p class="img-description">Приложение</p>
@@ -132,21 +137,83 @@
 
 
 
-    <footer class="footer__section" id="contacts">
-        <div class="footer container">
+    <footer class="footer-section ">
+        <div class="container">
             <!--адресс-->
-            <a href="#top"> <span class="logo-link current">Web</span><span class="logo-link--footer">Studio</span></a>
-            </a>
-            <address class="address-container">
-                <ul>
-                    <li class="address map">
-                        <a href="https://goo.gl/maps/Ju139H4fdCofPUA69" target="_blank" rel="noopener noreferer"> г.
-                            Киев, пр-т Леси Украинки, 26 </a></li>
-                    <li class="address">info@example.com</li>
-                    <li class="address">+38 099 111 11 11</li>
-                </ul>
-            </address>
+            <div>
 
+                <address class="address-section">
+                    <a href="./index.html">
+                        <svg class="icon-Web-Studio-footer">
+                            <use href="./images/SVG/symbol-defs.svg#icon-Web-Studio-footer"></use>
+                        </svg>
+                    </a>
+                    <ul>
+                        <li class="address map">
+                            <a href="https://goo.gl/maps/Ju139H4fdCofPUA69" target="_blank" rel="noopener noreferer"> г.
+                                Киев, пр-т Леси Украинки, 26 </a></li>
+                        <li class="address">
+                            <a href="mailto:info@devstudio.com">info@example.com</a></a></li>
+                        <li class="address">
+                            <a href="tel:+380961111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <!-- присоединяйтесь -->
+            <div class="subscribe-section">
+                <p class="footer-title">Присоединяйтесь</p>
+                <div class="container-social">
+                    <ul class="social-list">
+                        <li class="social-list-item">
+                            <a href="#" class="social-list-item-link-footer" target="_blank"
+                                rel="noopener noreferrer Nofollow">
+                                <svg class="social-list_svg-footer">
+                                    <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social-list-item">
+                            <a href="#" class="social-list-item-link-footer" target="_blank"
+                                rel="noopener noreferrer Nofollow">
+                                <svg class="social-list_svg-footer">
+                                    <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="#" class="social-list-item-link-footer">
+                                <svg class="social-list_svg-footer">
+                                    <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="#" class="social-list-item-link-footer" target="_blank"
+                                rel="noopener noreferrer Nofollow">
+                                <svg class="social-list_svg-footer">
+                                    <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Подпишись на рассылку -->
+            <!-- <div class="subscription">
+                <strong>Подпишитесь на рассылку</strong>
+    
+                <div class="subscription-form">
+                    <input class="colortext" type="email" name="mail" id="email" autocomplete="on" placeholder="E-mail" />
+                    <label class="sub">
+                        <a href="" class="sub hero-btn">
+                            Подписаться
+                        </a>
+                    </label>
+    
+                </div>
+            </div> -->
         </div>
     </footer>
 </body>
